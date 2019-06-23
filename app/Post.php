@@ -13,4 +13,9 @@ class Post extends Model
     {
     	return $this->belongsTo(Post::class);
     }
+
+    public function imagePath(){
+        return "/storage/" . $this->image;
+    }
+
 }
